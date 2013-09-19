@@ -1,0 +1,15 @@
+@(name: String)
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>名前占い結果</title>
+</head>
+<body>
+    @name さんの今日の運勢は最高です！
+    <form action="/person/regist" method="POST">
+        <input type="hidden" name="name" value="@name"/>
+        <input type="submit" value="登録"/>
+    </form>
+</body>
+</html>
